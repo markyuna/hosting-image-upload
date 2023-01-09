@@ -44,6 +44,9 @@ gem "bootsnap", require: false
 
 gem "simple_form", github: "heartcombo/simple_form"
 
+# We don't want to share those secret keys on GitHub.
+gem "dotenv-rails", groups: [:development, :test]
+
 # Use Sass to process CSS
 gem "sassc-rails"
 
