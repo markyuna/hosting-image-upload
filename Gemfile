@@ -44,6 +44,8 @@ gem "bootsnap", require: false
 
 gem "simple_form", github: "heartcombo/simple_form"
 
+gem "cloudinary"
+
 # We don't want to share those secret keys on GitHub.
 gem "dotenv-rails", groups: [:development, :test]
 

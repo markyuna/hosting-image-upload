@@ -26,7 +26,7 @@ class ArticlesController < ApplicationController
     if @article.save
       redirect_to @article, notice: "Article was successfully created."
     else
-      render :new, status: :unprocessable_entity
+      render :new
     end
   end
 
@@ -35,14 +35,14 @@ class ArticlesController < ApplicationController
     if @article.update(article_params)
       redirect_to @article, notice: "Article was successfully updated."
     else
-      render :edit, status: :unprocessable_entity
+      render :edit
     end
   end
 
   # DELETE /articles/1
   def destroy
     @article.destroy
-    redirect_to root_path, notice: "Article was successfully destroyed."
+    redirect_to articles_url, notice: "Article was successfully destroyed."
   end
 
   private
@@ -53,6 +53,6 @@ class ArticlesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def article_params
-      params.require(:article).permit(:title, :body)
+      params.require(:article).permit(:title, :body, :photo)
     end
 end
