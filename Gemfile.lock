@@ -146,12 +146,12 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     netrc (0.11.0)
-    nio4r (2.5.8)
+    nio4r (2.5.9)
     nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
     pg (1.4.5)
     public_suffix (5.0.1)
-    puma (5.6.5)
+    puma (5.6.7)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.5)
@@ -255,7 +255,7 @@ DEPENDENCIES
   dotenv-rails
   jsbundling-rails
   pg (~> 1.1)
-  puma (~> 5.0)
+  puma (~> 5.6)
   rails (~> 7.0.4)
   sassc-rails
   selenium-webdriver
